@@ -4,7 +4,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Part2 {
-    public static void exercise1(int[] arrayEx1) {
+
+    // Задание № 1
+    public static void sortAscending(int[] arrayEx1) {
 
         boolean resultEx1 = true;
 
@@ -17,7 +19,8 @@ public class Part2 {
         System.out.println("OK");
     }
 
-    public static int[] exercise2() {
+    // Задание № 2
+    public static int[] userArray() {
 
         Scanner scannerEx2 = new Scanner(System.in);
 
@@ -32,7 +35,8 @@ public class Part2 {
         return arrayEx2;
     }
 
-    public static void exercise3(int[] arrayEx3) {
+    // Задание № 3
+    public static void replacementFirstLast(int[] arrayEx3) {
 
         int arrayEx3Length = arrayEx3.length;
 
@@ -45,7 +49,8 @@ public class Part2 {
         System.out.println("Array 2: " + Arrays.toString(arrayEx3));
     }
 
-    public static int exercise4(int[] arrayEx4) {
+    // Задание № 4
+    public static int firstUniqueNumber(int[] arrayEx4) {
 
         System.out.println("Массив: " + Arrays.toString(arrayEx4));
 

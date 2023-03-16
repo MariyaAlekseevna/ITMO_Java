@@ -4,14 +4,17 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Part1 {
-    public static void exercise1() {
+
+    // Задание № 1
+    public static void oddNumbers() {
 
         for (int a = 1; a <= 99; a += 2) {
             System.out.println(a);
         }
     }
 
-    public static void exercise2() {
+    // Задание № 2
+    public static void dividedByThreeFive() {
 
         System.out.print("\nДелится на 3: ");
         for (int b = 1; b <= 100; b++) {
@@ -36,7 +39,8 @@ public class Part1 {
         System.out.println();
     }
 
-    public static void exercise3() {
+    // Задание № 3
+    public static void sumOfTwoIntegers() {
 
         Scanner scannerEx3 = new Scanner(System.in);
         System.out.println("Введите первое целое число:");
@@ -60,7 +64,8 @@ public class Part1 {
         }
     }
 
-    public static void exercise4() {
+    // Задание № 4
+    public static void comparisonOfThreeIntegers() {
 
         Scanner scannerEx4 = new Scanner(System.in);
         System.out.println("Введите первое целое число:");
@@ -82,37 +87,26 @@ public class Part1 {
         }
     }
 
-    public static void exercise5() {
+    // Задание № 5
+    public static void threeFirstLast(int[] arrayEx5) {
 
-        int[] arrayEx5 = {3, -3, 7, 4, 5, 4, 3};
+
         if (arrayEx5[0] == 3 && arrayEx5[arrayEx5.length - 1] == 3 && arrayEx5.length >= 2) {
             System.out.println("true");
         }
     }
 
-    public static void exercise6() {
+    // Задание № 6
+    public static boolean oneThreeConsistsOf(int[] arrayEx6) {
 
-        int[] arrayEx6 = new int[6];
-
-        System.out.println("Введите 6 целых чисел");
-
-        Scanner scannerEx6 = new Scanner(System.in);
-
-        arrayEx6[0] = scannerEx6.nextInt();
-        arrayEx6[1] = scannerEx6.nextInt();
-        arrayEx6[2] = scannerEx6.nextInt();
-        arrayEx6[3] = scannerEx6.nextInt();
-        arrayEx6[4] = scannerEx6.nextInt();
-        arrayEx6[5] = scannerEx6.nextInt();
-
-        scannerEx6.close();
-
-        System.out.println("Массив:" + Arrays.toString(arrayEx6));
+        boolean isConsistsOf = false;
 
         for (int i = 0; i < arrayEx6.length; i++) {
             if (arrayEx6[i] == 1 || arrayEx6[i] == 3) {
-                System.out.println("Массив содержит число 1 или 3.");
+                isConsistsOf = true;
+                break;
             }
         }
+        return isConsistsOf;
     }
 }
