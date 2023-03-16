@@ -4,14 +4,14 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Part1 {
-    public static void Exercise1() {
+    public static void exercise1() {
 
         for (int a = 1; a <= 99; a += 2) {
             System.out.println(a);
         }
     }
 
-    public static void Exercise2() {
+    public static void exercise2() {
 
         System.out.print("\nДелится на 3: ");
         for (int b = 1; b <= 100; b++) {
@@ -36,7 +36,7 @@ public class Part1 {
         System.out.println();
     }
 
-    public static void Exercise3() {
+    public static void exercise3() {
 
         Scanner scannerEx3 = new Scanner(System.in);
         System.out.println("Введите первое целое число:");
@@ -60,7 +60,7 @@ public class Part1 {
         }
     }
 
-    public static void Exercise4() {
+    public static void exercise4() {
 
         Scanner scannerEx4 = new Scanner(System.in);
         System.out.println("Введите первое целое число:");
@@ -82,7 +82,7 @@ public class Part1 {
         }
     }
 
-    public static void Exercise5() {
+    public static void exercise5() {
 
         int[] arrayEx5 = {3, -3, 7, 4, 5, 4, 3};
         if (arrayEx5[0] == 3 && arrayEx5[arrayEx5.length - 1] == 3 && arrayEx5.length >= 2) {
@@ -90,7 +90,7 @@ public class Part1 {
         }
     }
 
-    public static void Exercise6() {
+    public static void exercise6() {
 
         int[] arrayEx6 = new int[6];
 

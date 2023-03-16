@@ -4,9 +4,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Part2 {
-    public static void Exercise1() {
+    public static void exercise1(int[] arrayEx1) {
 
-        int[] arrayEx1 = {1, 3, 10, 20, 25, 33};
         boolean resultEx1 = true;
 
         for (int i = 0; i < arrayEx1.length - 1; i++) {
@@ -18,7 +17,7 @@ public class Part2 {
         System.out.println("OK");
     }
 
-    public static int[] Exercise2() {
+    public static int[] exercise2() {
 
         Scanner scannerEx2 = new Scanner(System.in);
 
@@ -33,8 +32,8 @@ public class Part2 {
         return arrayEx2;
     }
 
-    public static void Exercise3() {
-        int[] arrayEx3 = {1, 3, 10, 20, 25, 33};
+    public static void exercise3(int[] arrayEx3) {
+
         int arrayEx3Length = arrayEx3.length;
 
         System.out.println("Array 1: " + Arrays.toString(arrayEx3));
@@ -46,9 +45,8 @@ public class Part2 {
         System.out.println("Array 2: " + Arrays.toString(arrayEx3));
     }
 
-    public static void Exercise4() {
+    public static int exercise4(int[] arrayEx4) {
 
-        int[] arrayEx4 = {1, 1, 25, 3, 25, 1, 25};
         System.out.println("Массив: " + Arrays.toString(arrayEx4));
 
         for (int i = 0; i < arrayEx4.length; i++) {
@@ -61,11 +59,11 @@ public class Part2 {
             }
             if (counter == 1) {
                 System.out.println("Первое уникальное значение в массиве: " + arrayEx4[i]);
-                return;
+                return arrayEx4[i];
             }
         }
         System.out.println("В массиве нет уникальных элементов.");
-        return;
+        return -1;
     }
 }
 
