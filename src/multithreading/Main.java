@@ -33,5 +33,6 @@ public class Main {
         ThreadName threadName2 = new ThreadName(object);
         threadName1.start();
         threadName2.start();
+
     }
 }
