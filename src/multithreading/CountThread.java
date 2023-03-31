@@ -13,5 +13,4 @@ public class CountThread extends Thread {
             counter.increment();
         }
     }
-
 }
